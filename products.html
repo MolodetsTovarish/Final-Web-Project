@@ -1,125 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1002 - Lesson 12</title>
-    <link rel="stylesheet" href="Content/reset.css">
-    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="Content/main.css">
-  </head>
-  <body>
-	  
-    <!-- HEADER SECTION -->
-	  <header class="masthead">
-		  <nav class="nav">
-        <ul class="toggle">
-          <li>
-            <button id="menu-button"><i class="fa fa-bars fa-2x"></i></button>
-          </li>
-        </ul>
-			  <ul class="nav-bar">
-				  <li><a id="home" href="index.html">Home</a></li>
-          <li class="active"><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-			  </ul>
-		  </nav>
-	  </header>
-    
-    <!-- Main Section -->
-    
-    <div class="wrapper">
-      <main class="mainContent">
-        <article>
-          <h1 id="main-heading">Products</h1>
-          <!-- Product Display Section -->
-            <section>
-                <h1>Our Products</h1>
-                <!-- Displays images of products -->
-                <div id="productimages">
-                    <img src="Assets/Images/olympic-torch.jpg" alt="Torch" width="375" height="300">
-                    <img src="Assets/Images/match_burning.jpg" alt="Campfire" width="375" height="300">
-                    <img src="Assets/Images/matches.jpg" alt="Matches" width="375" height="300">
-                </div>
-            
-                <p>Our current selection of wheels includes:
-                   <ul id="products">
-                        <li><strong>The Torch</strong>: Light the way</li>
-                        <li><strong>The Campfire Starter Pack</strong>: Boosting morale and survival</li>
-                        <li><strong>Matches</strong>: Quick and easy fire-starting for home utilities</li>
-                   </ul>
-               </p>
-            </section>
-          
-          <!-- Form Section -->
-                <section class="formSection">
-                    <form action="processForm.php" method="post" id="purchaseForm" class="forms">
-                       <fieldset class="purchase">
-                       <legend>Purchase Form</legend>
-                       
-                       <!-- Radio Buttons -->
-                       <fieldset class="productselect">
-                           <legend>Select a Product</legend>
-                           <input type="radio" id="woodwheel" name="torch" value="Torch">
-                           <label for="torch">Torch</label>
-                           
-                           <input type="radio" id="campfire" name="campfire" value="Campfire">
-                           <label for="campfire">Campfire</label>
-                           
-                           <input type="radio" id="matches" name="matches" value="Matches">
-                           <label for="matches">Matches</label>
-                       </fieldset>
-                       
-                       <div class= "row formGroup">
-                       <label for="firstName">First Name:</label>
-                       <input type="text" id="firstName" name = "firstName" class = "formControl" placeholder="Enter Your First Name" required>
-                        </div>
-                        
-                        <div class= "row formGroup">
-                       <label for="lastName">Last Name:</label>
-                       <input type="text" id="lastName" name = "lastName" class = "formControl" placeholder="Enter Your Last Name" required>
-                        </div>
-                        
-                       <div class= "row formGroup">
-                       <label for="email">Email:</label>
-                       <input type="text" id="email" name = "email" class = "formControl" placeholder="Enter Your Email" required>
-                       </div>
-                       
-                       <div class= "row formGroup">
-                       <label for="phone">Phone:</label>
-                       <input type="textarea" id="phone" name = "phone" class = "formControl" placeholder="(XXX) XXX-XXXX" required>
-                       </div>
-                       
-                       <div class= "row formGroup">
-                       <label for="Address">Address:</label>
-                       <input type="textarea" id="address" name = "address" class = "formControl" placeholder="Enter Your Address" required>
-                       </div>
-                       
-                       <div class= "row formGroup">
-                       <label for="postalcode">Postal Code:</label>
-                       <input type="textarea" id="postalcode" name = "postalcode" class = "formControl" placeholder="XXX XXX" required>
-                       </div>
-                       
-                       </fieldset>
-                       
-                       <!-- Submit Button -->
-                       <input type="submit" value="Order Item" class = "btn">
-                       
-                    </form>
-                </section>
-        </article>
-      </main>
-    </div>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <h4>&copy; Copyright 2015</h4>
-    </footer>
-    
-    <script src="Scripts/main.js"></script>
-
-  </body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>COMP1002 - Lesson 3 - Products</title>
+        <!-- CSS Section -->
+        <link rel="stylesheet" href="Content/app.css"
+    </head>
+    <body>
+        <header>
+        <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li class="active"><a href="products.html">Products</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="aboutus.html">About Us</a></li>
+               <li><a href="contactus.html">Contact Us</a></li>
+           </ul>
+       </nav>    
+        </header>
+        
+        <main>
+            <article class="firstArticle">
+                <h1>Products</h1>
+                <p>We guarantee an <abbr title = "mean time to repair">MTTR</abbr> of 4 hours</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro maiores excepturi explicabo odit nemo soluta, similique nulla aspernatur quis aliquid voluptate amet sunt, quo libero, natus ut aperiam! Assumenda quam odio at nostrum voluptas, perferendis numquam amet sed, aut magnam expedita nemo ad dolorem sapiente distinctio ullam veritatis quibusdam repellendus.</p>
+                <figure>
+                    <img src="http://placehold.it/350x150" alt = "placeholder image 350x150" title="placeholder">
+                        <figcaption>
+                            This is my placeholder image
+                        </figcaption>
+                </figure>
+                
+                <p><blockquote>3D printing also known as additive manufacturing is any of various processes used to make a three-dimensional object.[1] In 3D printing, additive processes are used, in which successive layers of material are laid down under computer control.[2] These objects can be of almost any shape or geometry, and are produced from a 3D model or other electronic data source. A 3D printer is a type of industrial robot.--<cite>Wikipedia</cite></blockquote></p>
+            </article>
+        </main>
+        
+        <footer>
+           <h4>&copy; Copyright 2015</h4>
+        </footer>
+    </body>
 </html>
