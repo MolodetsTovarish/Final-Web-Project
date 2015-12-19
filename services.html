@@ -1,37 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>COMP1002 - Lesson 3 -Services</title>
-        <!-- CSS Section -->
-        <link rel="stylesheet" href="Content/app.css"
-    </head>
-    <body>
-        <header>
-        <nav>
-           <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="products.html">Products</a></li>
-               <li class="active"><a href="services.html">Services</a></li>
-               <li><a href="aboutus.html">About Us</a></li>
-               <li><a href="contactus.html">Contact Us</a></li>
-           </ul>
-       </nav>    
-        </header>
-        
-        <main>
-            <article class="firstArticle">
-                <h1>Services</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro maiores excepturi explicabo odit nemo soluta, similique nulla aspernatur quis aliquid voluptate amet sunt, quo libero, natus ut aperiam! Assumenda quam odio at nostrum voluptas, perferendis numquam amet sed, aut magnam expedita nemo ad dolorem sapiente distinctio ullam veritatis quibusdam repellendus.</p>
-                
-                
-                
-            </article>
-        </main>
-        
-        <footer>
-           <h4>&copy; Copyright 2015</h4>
-        </footer>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COMP1002 - Lesson 12</title>
+    <link rel="stylesheet" href="Content/reset.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="Content/main.css">
+  </head>
+  <body>
+	  
+    <!-- HEADER SECTION -->
+	  <header class="masthead">
+		  <nav class="nav">
+        <ul class="toggle">
+          <li>
+            <button id="menu-button"><i class="fa fa-bars fa-2x"></i></button>
+          </li>
+        </ul>
+			  <ul class="nav-bar">
+				  <li><a id="home" href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+			  </ul>
+		  </nav>
+	  </header>
+    
+    <!-- Main Section -->
+    
+    <div class="wrapper">
+      <main class="mainContent">
+        <article>
+          <h1 id="main-heading">Uses For Fire</h1>
+          
+            <div class="content">
+              <h3>Cooking</h3>
+              <figure>
+                <img src="Assets/images/campfire.jpg">
+              </figure>
+              <p>Roast a delicious cut of buffalo over an open fire, create purified water by boiling, or barbeque burgers for your family gatherings. An essential part of preparing healthy, nutricious food.</p>
+            </div>
+            
+            <div class="content">
+              <h3>Survival</h3>
+              <figure>
+                <img src="Assets/images/torch.jpg">
+              </figure>
+              <p>Repel predators, remove pests, clear your edible supplies of bacteria. Having fire with you increases your chances of not dying from natural hazards. If you need to call for backup, use smoke signals to signal a nearby tribe or rescue team.</p>
+            </div>
+            
+            <div class="content">
+              <h3>Heat</h3>
+              <figure>
+                <img src="Assets/images/fireplace-in-home.jpeg" width="900px">
+              </figure>
+              <p>Insulate your body and fight against the cold with a burning flame. Sometimes a jacket just isn't enough. Huddling next to a flame is a quick solution your heat-related problems.</p>
+            </div>
+            
+            <div class="content">
+              <h3>Light</h3>
+              <figure>
+                <img src="Assets/images/cavetorch.jpg">
+              </figure>
+              <p>Now nighttime is lighttime. Fire produces light, which illuminates dark, hard to see areas, allowing you to extend your daily activities for as long as you need. This is also useful for establishing shelter, such as caves.</p>
+            
+            </div>
+            
+            <div class="content">
+              <h3>Blacksmithing</h3>
+              <figure>
+                <img src="Assets/images/blacksmithing.jpg">
+              </figure>
+              <p>Use fire to change the shape of metal objects to produce useful items such as swords, tools, and artwork. It changes the resources of nature to best suit your needs.</p>
+            </div>
+            
+            
+            <div class="content">
+              <h3>Community and Ceremony</h3>
+               <p>Imagine, wrapping up the end of the day with your tribe, circling a campfire. The fire establishes an ambiance of security and an atmosphere of comraderie. It is a signal that all work for the day has ended and it is time to unwind. This prompts people to sing, tell stories, and bond when a source of fire is present.</p>           
+              <figure>
+                <img src="Assets/images/camp-fire.jpg">
+                <figcaption>An example of fire-based community building and entertainment</figcaption>
+              </figure>
+              </div>
+            
+        </article>
+      </main>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <h4>&copy; Copyright 2015</h4>
+    </footer>
+    
+    <script src="Scripts/main.js"></script>
+
+  </body>
 </html>
